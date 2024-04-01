@@ -1,0 +1,10 @@
+LOAD 3,R1
+LOAD 1,R2
+LOAD -3,R3
+JZ R1,end
+loop:
+ADD R2,R2
+ADD R3,R1
+JNZ R1,loop
+end:
+PRINT R2

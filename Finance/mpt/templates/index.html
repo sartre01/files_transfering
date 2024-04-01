@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Optimization</title>
+</head>
+<body>
+    <h1>Portfolio Optimization</h1>
+    <form action="/optimize" method="POST">
+        <label for="symbols">Enter symbols (comma-separated):</label><br>
+        <input type="text" id="symbols" name="symbols"><br>
+        <label for="start_date">Start Date:</label><br>
+        <input type="date" id="start_date" name="start_date"><br>
+        <label for="end_date">End Date:</label><br>
+        <input type="date" id="end_date" name="end_date"><br>
+        <label for="initial_investment">Initial Investment:</label><br>
+        <input type="number" id="initial_investment" name="initial_investment"><br>
+        <input type="submit" value="Optimize">
+    </form>
+</body>
+</html>
